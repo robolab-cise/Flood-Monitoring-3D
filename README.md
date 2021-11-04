@@ -2,7 +2,7 @@
 - This is a repository for a Robot Operating System (ROS) project.
 - This project is for a Voronoi-based flood area detection using multi-agent systems.
 
-## Abstract
+## About
 This simulation is similar to the [Flood-Monitoring](/../../../Flood-Monitoring) project. The difference is that it utilizes a 3D world instead of a flat 2D map.
 
 ## How to Download the Project Folder
