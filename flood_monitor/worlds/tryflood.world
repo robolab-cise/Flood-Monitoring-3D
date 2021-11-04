@@ -1,0 +1,98 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+   <world name="default">
+      <include>
+         <uri>model://ground_plane</uri>
+      </include>
+      <include>
+         <uri>model://sun</uri>
+      </include>
+      <actor name="water1">
+        <link name="box_link">
+          <visual name="visual">
+            <geometry>
+              <box>
+                <size>1 1 0.1</size>
+              </box>
+            </geometry>
+          </visual>
+        </link>
+        <script>
+          <loop>true</loop>
+          <auto_start>true</auto_start>
+          <trajectory id="0" type="square">
+             <waypoint>
+                <time>0.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+          </trajectory>
+        </script>
+      </actor>
+
+      <actor name="water2">
+        <link name="box_link">
+          <visual name="visual">
+            <geometry>
+              <box>
+                <size>4 4 0.1</size>
+              </box>
+            </geometry>
+          </visual>
+        </link>
+        <script>
+          <loop>true</loop>
+          <auto_start>true</auto_start>
+          <trajectory id="0" type="square">
+             <waypoint>
+                <time>0.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>5.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>6.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>7.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>8.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>9.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>10.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+          </trajectory>
+        </script>
+      </actor>
+
+
+   </world>
+</sdf>
+
+

@@ -1,0 +1,36 @@
+<?xml version="1.0"?> 
+<sdf version="1.4">
+  <world name="animated_box_world">
+
+    <!-- Ground Plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <model name="box">
+      
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>1 1 10</size>
+            </box>
+          </geometry>
+        </collision>
+
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>1 1 0.1</size>
+            </box>
+          </geometry>
+        </visual>
+      </link>
+
+    </model>        
+  </world>
+</sdf>

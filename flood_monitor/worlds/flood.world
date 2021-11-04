@@ -1,0 +1,999 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+   <world name="default">
+      <include>
+         <uri>model://ground_plane</uri>
+      </include>
+      <include>
+         <uri>model://sun</uri>
+      </include>
+      <physics type='ode'>
+         <max_step_size>0.0125</max_step_size>
+         <real_time_factor>1</real_time_factor>
+         <real_time_update_rate>80</real_time_update_rate>
+      </physics>
+      <actor name="water1">
+        <link name="box_link">
+          <visual name="visual">
+            <geometry>
+              <box>
+                <size>1 1 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>0 167 190 1</diffuse>
+            </material>
+          </visual>
+        </link>
+        <script>
+          <loop>true</loop>
+          <delay_start>0.000000</delay_start>
+          <auto_start>true</auto_start>
+          <trajectory id="0" type="square">
+             <waypoint>
+                <time>0.1</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+          </trajectory>
+        </script>
+      </actor>
+
+      <actor name="water2">
+        <link name="box_link">
+          <visual name="visual">
+            <geometry>
+              <box>
+                <size>4 4 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>0 167 190 1</diffuse>
+            </material>
+          </visual>
+        </link>
+        <script>
+          <loop>true</loop>
+          <delay_start>0.000000</delay_start>
+          <auto_start>true</auto_start>
+          <trajectory id="0" type="square">
+            <waypoint>
+                <time>0.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>0.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>5.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>5.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>6.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>6.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>7.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>7.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>8.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>8.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>9.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>9.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>10.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+          </trajectory>
+        </script>
+      </actor>
+
+      <actor name="water3">
+        <link name="box_link">
+          <visual name="visual">
+            <geometry>
+              <box>
+                <size>6 6 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>0 167 190 1</diffuse>
+            </material>
+          </visual>
+        </link>
+        <script>
+          <loop>true</loop>
+          <delay_start>0.000000</delay_start>
+          <auto_start>true</auto_start>
+          <trajectory id="0" type="square">
+            <waypoint>
+                <time>0.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>0.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>5.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>5.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>6.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>6.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>7.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>7.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>8.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>8.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>9.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>9.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>10.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+          </trajectory>
+        </script>
+      </actor>
+
+      <actor name="water4">
+        <link name="box_link">
+          <visual name="visual">
+            <geometry>
+              <box>
+                <size>8 8 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>0 167 190 1</diffuse>
+            </material>
+          </visual>
+        </link>
+        <script>
+          <loop>true</loop>
+          <delay_start>0.000000</delay_start>
+          <auto_start>true</auto_start>
+          <trajectory id="0" type="square">
+            <waypoint>
+                <time>0.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>0.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>5.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>5.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>6.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>6.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>7.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>7.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>8.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>8.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>9.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>9.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>10.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+          </trajectory>
+        </script>
+      </actor>
+
+      <actor name="water5">
+        <link name="box_link">
+          <visual name="visual">
+            <geometry>
+              <box>
+                <size>10 10 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>0 167 190 1</diffuse>
+            </material>
+          </visual>
+        </link>
+        <script>
+          <loop>true</loop>
+          <delay_start>0.000000</delay_start>
+          <auto_start>true</auto_start>
+          <trajectory id="0" type="square">
+            <waypoint>
+                <time>0.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>0.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>5.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>5.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>6.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>6.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>7.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>7.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>8.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>8.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>9.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>9.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>10.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+          </trajectory>
+        </script>
+      </actor>
+
+      <actor name="water6">
+        <link name="box_link">
+          <visual name="visual">
+            <geometry>
+              <box>
+                <size>12 12 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>0 167 190 1</diffuse>
+            </material>
+          </visual>
+        </link>
+        <script>
+          <loop>true</loop>
+          <delay_start>0.000000</delay_start>
+          <auto_start>true</auto_start>
+          <trajectory id="0" type="square">
+            <waypoint>
+                <time>0.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>0.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>5.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>5.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>6.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>6.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>7.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>7.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>8.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>8.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>9.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>9.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>10.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+          </trajectory>
+        </script>
+      </actor>
+
+      <actor name="water7">
+        <link name="box_link">
+          <visual name="visual">
+            <geometry>
+              <box>
+                <size>14 14 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>0 167 190 1</diffuse>
+            </material>
+          </visual>
+        </link>
+        <script>
+          <loop>true</loop>
+          <delay_start>0.000000</delay_start>
+          <auto_start>true</auto_start>
+          <trajectory id="0" type="square">
+            <waypoint>
+                <time>0.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>0.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>5.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>5.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>6.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>6.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>7.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>7.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>8.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>8.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>9.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>9.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>10.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+          </trajectory>
+        </script>
+      </actor>
+
+
+      <actor name="water8">
+        <link name="box_link">
+          <visual name="visual">
+            <geometry>
+              <box>
+                <size>16 16 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>0 167 190 1</diffuse>
+            </material>
+          </visual>
+        </link>
+        <script>
+          <loop>true</loop>
+          <delay_start>0.000000</delay_start>
+          <auto_start>true</auto_start>
+          <trajectory id="0" type="square">
+            <waypoint>
+                <time>0.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>0.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>5.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>5.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>6.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>6.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>7.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>7.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>8.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>8.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>9.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>9.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>10.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+          </trajectory>
+        </script>
+      </actor>
+
+      <actor name="water9">
+        <link name="box_link">
+          <visual name="visual">
+            <geometry>
+              <box>
+                <size>18 18 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>0 167 190 1</diffuse>
+            </material>
+          </visual>
+        </link>
+        <script>
+          <loop>true</loop>
+          <delay_start>0.000000</delay_start>
+          <auto_start>true</auto_start>
+          <trajectory id="0" type="square">
+            <waypoint>
+                <time>0.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>0.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>5.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>5.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>6.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>6.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>7.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>7.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>8.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>8.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>9.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>9.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>10.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+          </trajectory>
+        </script>
+      </actor>
+
+
+      <actor name="water10">
+        <link name="box_link">
+          <visual name="visual">
+            <geometry>
+              <box>
+                <size>20 20 0.1</size>
+              </box>
+            </geometry>
+            <material>
+              <diffuse>0 167 190 1</diffuse>
+            </material>
+          </visual>
+        </link>
+        <script>
+          <loop>true</loop>
+          <delay_start>0.000000</delay_start>
+          <auto_start>true</auto_start>
+          <trajectory id="0" type="square">
+            <waypoint>
+                <time>0.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>0.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>1.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>2.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>3.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>4.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>5.0</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>5.5</time>
+                <pose>0 0 0 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>6.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>6.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>7.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>7.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>8.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>8.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>9.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>9.5</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+             <waypoint>
+                <time>10.0</time>
+                <pose>0 0 -0.1 0 0 0</pose>
+             </waypoint>
+          </trajectory>
+        </script>
+      </actor>
+   </world>
+</sdf>
+
+
