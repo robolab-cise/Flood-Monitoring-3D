@@ -1,0 +1,27 @@
+# Drone index start with 2 to accommodate the order of elements in Gazebo.
+[index]
+drone01 = 2
+drone02 = 3
+drone03 = 4
+drone04 = 5
+drone05 = 6
+drone06 = 7
+drone07 = 8
+drone08 = 9
+drone09 = 10
+drone10 = 11
+drone11 = 12
+drone12 = 13
+drone13 = 14
+drone14 = 15
+drone15 = 16
+drone16 = 17
+drone17 = 18
+# dist = 30
+
+[velocity]
+h_vel_scale = -0.3
+v_vel_scale = -2
+
+[distance]
+max = 20
