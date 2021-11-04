@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<launch>
+	<group ns="drone03">
+		<!-- For control of the drone -->	
+		<include file="$(find hector_quadrotor_gazebo)/launch/spawn_quadrotor.launch">
+
+		<!-- Name of the drone -->
+		<arg name="name" default="drone03"/>
+		<arg name="tf_prefix" value="drone03"/>
+
+		<!-- For rendering of the drone -->
+		<arg name="model" default="$(find hector_quadrotor_description)/urdf/quadrotor_downward_cam_red.gazebo.xacro"/>
+
+		<!-- Starting position for drones -->
+		<arg name="x" default="-25.0"/>
+		<arg name="y" default="16.0"/>
+		<arg name="z" default="0.2"/>
+		</include>
+	</group>
+	<node pkg="rosservice" type="rosservice" name="enable_motors_d03" args="call --wait /drone03/enable_motors true"/>
+</launch>

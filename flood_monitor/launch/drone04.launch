@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<launch>
+	<group ns="drone04">
+		<!-- For control of the drone -->	
+		<include file="$(find hector_quadrotor_gazebo)/launch/spawn_quadrotor.launch">
+		
+		<!-- Name of the drone -->
+		<arg name="name" default="drone04"/>
+		<arg name="tf_prefix" value="drone04"/>
+
+		<!-- For rendering of the drone -->
+		<arg name="model" default="$(find hector_quadrotor_description)/urdf/quadrotor_downward_cam_yellow.gazebo.xacro"/>
+
+		<!-- Starting position for drones -->
+		<arg name="x" default="25.0"/>
+		<arg name="y" default="13.0"/>
+		<arg name="z" default="0.2"/>
+		</include>
+	</group>
+</launch>

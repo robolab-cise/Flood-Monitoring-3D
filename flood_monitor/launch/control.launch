@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<launch>
+    <node name="drone03" pkg="flood_monitor" type="drone03.py" />
+    <node name="drone10" pkg="flood_monitor" type="drone10.py" />
+    <node name="drone11" pkg="flood_monitor" type="drone11.py" />
+    <node name="drone12" pkg="flood_monitor" type="drone12.py"/>
+    <node name="drone13" pkg="flood_monitor" type="drone13.py" />
+    <node name="drone14" pkg="flood_monitor" type="drone14.py" />
+    <node name="drone15" pkg="flood_monitor" type="drone15.py" />
+    <node name="drone16" pkg="flood_monitor" type="drone16.py" />
+    <node name="drone17" pkg="flood_monitor" type="drone17.py" />
+</launch>
