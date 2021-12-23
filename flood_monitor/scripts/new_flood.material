@@ -1,0 +1,13 @@
+material blue/flood
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture blue.png
+      }
+    }
+  }
+}
